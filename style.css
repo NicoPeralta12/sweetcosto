@@ -1,0 +1,73 @@
+/* Estilo global */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin-top: 20px;
+}
+
+.name {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre los divs */
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('fonts/Whisper-Regular.ttf') format('truetype');
+}
+
+.name h1 {
+    font-family: 'MiFuentePersonalizada', sans-serif; /* Aplica la fuente personalizada */
+    font-size: 5rem;
+    color: rgb(73, 156, 207);
+    
+}
+
+.name h2 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.image img {
+    width: 200px;          /* Ajusta el tamaño de la imagen */
+    height: 200px;         /* Mantiene un tamaño cuadrado */
+    border-radius: 50%;    /* Hace que la imagen sea circular */
+    object-fit: cover;     /* Asegura que la imagen se ajuste al cuadro sin distorsión */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra para un efecto estético */
+    margin-top: 10px;      /* Espacio entre el título y la imagen */
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgb(73, 156, 207);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
